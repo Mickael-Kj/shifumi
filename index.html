@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shi_Fu_Mi</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Shi Fu Mi</h1>
+    </header>
+
+    <main>
+<section id="mainGame">
+    <div class="monChoix">
+<div class="PFC" class="pierre" onclick="choice()">Pierre</div>
+<div class="PFC" class="feuille">Feuille</div>
+<div class="PFC" class="ciseaux">Ciseaux</div>
+    </div>
+
+    <div class="adversaire">
+        <div class="PFC">Random</div>
+        <div class="compteur"></div>
+    </div>
+</section>
+<button class="buttonPlay" onclick="clickPlay()">Shifumi!</button>
+
+<div class="result">
+    <span class="win">Win</span>
+    <span class="lose">Lose</span>
+    <span class="égalité">Egalité</span>
+</div>
+<div class="count">
+<div class="countContent">Vistoires</div>
+<div class="countContent">Défaites</div>
+<div class="countContent">Egalités</div>
+</div>
+    </main>
+
+
+
+    <footer></footer>
+    <script src="assets/js/shiFuMi.js"></script>
 </body>
 </html>
