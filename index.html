@@ -14,13 +14,13 @@
     <main>
 <section id="mainGame">
     <div class="monChoix">
-<div class="PFC" class="pierre" onclick="choice()">Pierre</div>
-<div class="PFC" class="feuille">Feuille</div>
-<div class="PFC" class="ciseaux">Ciseaux</div>
+<div class="pierre" onclick="choicePierre()">Pierre</div>
+<div class="papier"onclick="choicePapier()">Papier</div>
+<div class="ciseaux" onclick="choiceCiseaux()">Ciseaux</div>
     </div>
 
     <div class="adversaire">
-        <div class="PFC">Random</div>
+        <div class="random">Random</div>
         <div class="compteur"></div>
     </div>
 </section>
@@ -28,13 +28,13 @@
 
 <div class="result">
     <span class="win">Win</span>
-    <span class="lose">Lose</span>
-    <span class="égalité">Egalité</span>
+    <!-- <span class="lose">Lose</span>
+    <span class="égalité">Egalité</span> -->
 </div>
 <div class="count">
-<div class="countContent">Vistoires</div>
-<div class="countContent">Défaites</div>
-<div class="countContent">Egalités</div>
+<div class="countContent">Vistoires<br><p>0</p></div>
+<div class="countContent">Défaites<br><p>0</p></div>
+<div class="countContent">Egalités<br><p>0</p></div>
 </div>
     </main>
 

@@ -15,12 +15,32 @@ header{
     height: 100px;
     background-color: cornflowerblue;
 }
-.PFC{
+p{
+    text-align: center;
+}
+.pierre, .papier, .ciseaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pierre{
+    cursor: pointer;
     height: 200px;
     width: 200px;
-    background-color: #5598a4;
-    margin: 20px;
-    text-align: center;
+    background-color: grey;
+}
+.papier{
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(34, 34, 34);
+
+}
+.ciseaux{
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(72, 72, 72);
 
 }
 .adversaire{
@@ -30,7 +50,17 @@ header{
     width: 50%;
     background-color: deeppink;
 }
+.random{
+    height: 200px;
+    width: 200px;
+    display: block;
+    background-color: rgb(72, 72, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .buttonPlay{
+    cursor: pointer;
     margin-top: 50px;
     height: 100px;
     width: 200px;
@@ -39,11 +69,17 @@ header{
     background-color: orangered;
     display: flex;
     align-items: center;
-    justify-content: center;          
+    justify-content: center; 
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    border: none;       
+}
+.buttonPlay:hover{
+    border-radius: 20px;
 }
 #mainGame{
     background-color: darkorchid;
-    height: 500px;
+    height: 400px;
     width: 100%;
     display: flex;
 	flex-direction: row;
@@ -71,7 +107,14 @@ header{
 }
 .countContent{
     background-color: white;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+.win{
+    position: relative;
+    left: 300px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
 }
