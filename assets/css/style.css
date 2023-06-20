@@ -91,7 +91,7 @@ h1{
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 200px;
+    gap: 600px;
 }
 .button {
     /* display: flex;
@@ -149,6 +149,6 @@ h1{
 } */
 .img_thunder_centre{
     position: absolute;
-    left: 750px;
+    left: 700px;
     top: 400px;
 }
