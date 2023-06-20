@@ -1,23 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Lato:ital,wght@1,300&family=Quicksand:wght@300&family=Ysabeau:wght@1&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-:root {
-    --border-radius: 15px;
-    --btn-padding: 20px;
-}
-
 body {
-    background-color: grey;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(154, 154, 154);
+    font-family: 'Jura', sans-serif;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+:root {
+    --border-radius: 15px;
+    --btn-padding: 20px;
+}
 .score {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -28,84 +26,96 @@ body {
     align-items: center;
     align-content: stretch;
     font-size: 20px;
-    background-color: white;
+    /* background-color: #fddf7f; */
     padding: var(--btn-padding);
     border-radius: 15px;
 }
+.texte-score{
+    margin-right: 30px;
+    margin-left: 30px;
+    color: #fddf7f;
+}
 
 #reset {
-    width: 200px;
-    height: 80px;
+    width: 150px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
+    color: #fddf7f;
+    margin-left: 50px;
 }
 
 #reset:hover {
-    background-color: orangered;
+    background-color: #fddf7f;
+    color: rgb(154, 154, 154);
 }
 
 .action {
-    margin-top: 40px;
-    margin-bottom: 40px;
     text-align: center;
 }
 
 #message {
-    color: white;
+    color: #fddf7f;
     font-weight: 700;
     font-size: 25px;
 }
-h1{
-    color: white;
+header{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
-
+h1{
+    color: #fddf7f;
+}
 #next {
     margin-top: 20px;
     padding: 10px 30px;
-    background-color: orangered;
-    color: white;
+    background-color: #fddf7f;
+    color: rgb(154, 154, 154);
     border-radius: var(--border-radius);
     visibility: hidden;
     cursor: pointer;
 }
-
 #next.active {
     visibility: visible;
 }
-
 .jeu {
-    border-top: 1px solid black;
-    padding-top: 40px;
+    /* border-top: 2px solid #fddf7f; */
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 200px;
 }
-
 .button {
     /* display: flex;
     align-items: center; */
     font-size: 30px;
     padding: var(--btn-padding);
+    text-align: center;
 }
-
 .btn-joueur,
 .btn-ordi {
     border-radius: 15px;
     transition: all 0.2s ease;
 }
-
+.btn-ordi{
+    color: #fddf7f;
+}
 .btn-joueur {
-    color: white;
+    color: rgb(154, 154, 154);
     cursor: pointer;
-    background-color: rgb(50, 63, 50);
+    background-color: #fddf7f;
 }
 
 .btn-joueur:hover {
-    color: rgb(50, 63, 50);
+    color: #fddf7f;
     background-color: white;
 }
 
@@ -118,8 +128,8 @@ h1{
 }
 
 .btn-joueur.desactivated {
-    background-color: lightyellow;
     cursor: default;
+    background-color: rgb(154, 154, 154);
 }
 
 .btn-joueur.desactivated:hover,
@@ -128,12 +138,17 @@ h1{
 }
 
 .btn-joueur.active {
-    background-color: rgb(50, 63, 50);
+    background-color: white;
 }
 
 .btn-ordi.active {
-    background-color: orangered;
+    background-color: white;
 }
-#pierre, #papier, #ciseaux{
+/* #pierre, #papier, #ciseaux{
     display: block;
+} */
+.img_thunder_centre{
+    position: absolute;
+    left: 750px;
+    top: 400px;
 }

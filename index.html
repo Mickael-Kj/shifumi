@@ -3,61 +3,70 @@
 
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Lato:ital,wght@1,300&family=Quicksand:wght@300&family=Ysabeau:wght@1&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shi_Fu_Mi</title>
+    <title>Elements Battle</title>
 </head>
 
 <body>
     <header>
-        <h1>Shi Fu Mi</h1>
+        <h1>Elements Battle</h1>
+        <!-- <img class="thunder" src="assets/img/thunder.png" alt="thunder" height="80px"> -->
     </header>
     <section id="new">
         <div class="score">
-            <p>Ton score</p>
+            <p class="texte-score">Ton score</p>
             <p id="score-joueur">0</p>
-            <p>Score adverse</p>
+            <p class="texte-score">Score adverse</p>
             <p id="score-ordinateur">0</p>
+            <p class="texte-score">Egalité</p>
+            <p id="score-égalité">0</p>
             <div id="reset">Effacer</div>
             <div id="next">Tour suivant</div>
-        </div>
-        <div class="jeu">
-            <div class="choix">
-                <div class="button btn-joueur" id="pierre" onclick="choicePierre()">
-                    <img src="assets/img/fire.png" height="70px" alt="pierre">
-                    <p>Feu</p>
-                </div>
-                <div class="button btn-joueur" id="papier" onclick="choicePapier()">
-                    <img src="assets/img/soil.png" height="70px" alt="papier">
-                    <p>Terre</p>
-                </div>
-                <div class="button btn-joueur" id="ciseaux" onclick="choiceCiseaux()">
-                    <img src="assets/img/ice.png" height="70px" alt="papier">
-                    <p>Glace</p>
-                </div>
-
-            </div>
-            <div class="choix">
-                <div class="button btn-ordi" id="opierre">
-                    <img src="assets/img/fire.png" height="70px" alt="pierre">
-                    <p>Feu</p>
-                </div>
-                <div class="button btn-ordi" id="opapier">
-                    <img src="assets/img/soil.png" height="70px" alt="papier">
-
-                    <p>Terre</p>
-                </div>
-                <div class="button btn-ordi" id="ociseaux">
-                    <img src="assets/img/ice.png" height="70px" alt="papier">
-
-                    <p>Glace</p>
-                </div>
-
-            </div>
         </div>
         <div class="action">
             <p id="message">A vous de jouer !</p>
         </div>
+        <div class="jeu">
+            <div class="choix">
+                <div class="button btn-joueur" id="pierre">
+                    <img src="assets/img/fire.png" height="70px" alt="pierre">
+                    <!-- <p>Feu</p> -->
+                </div>
+                <div class="button btn-joueur" id="papier">
+                    <img src="assets/img/soil.png" height="70px" alt="papier">
+                    <!-- <p>Terre</p> -->
+                </div>
+                <div class="button btn-joueur" id="ciseaux">
+                    <img src="assets/img/ice.png" height="70px" alt="papier">
+                    <!-- <p>Glace</p> -->
+                </div>
+            </div>
+        <div class="img_thunder_centre">
+        <img class="thunder" src="assets/img/thunder.png" alt="thunder" height="100px">
+        </div>
+            <div class="choix">
+                <div class="button btn-ordi" id="opierre">
+                    <img src="assets/img/fire.png" height="70px" alt="pierre">
+                    <!-- <p>Feu</p> -->
+                </div>
+                <div class="button btn-ordi" id="opapier">
+                    <img src="assets/img/soil.png" height="70px" alt="papier">
+                    <!-- <p>Terre</p> -->
+                </div>
+                <div class="button btn-ordi" id="ociseaux">
+                    <img src="assets/img/ice.png" height="70px" alt="papier">
+                    <!-- <p>Glace</p> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="action">
+            <p id="message">A vous de jouer !</p>
+        </div> -->
     </section>
 
 
