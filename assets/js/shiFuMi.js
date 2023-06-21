@@ -1,7 +1,7 @@
 // ------------------------JEU : pierre, feuille, ciseaux avec les elements feu, terre et glace.----------------
-// PIERRE = FIRE
-// PAPIER = SOIL
-// CISEAUX = ICE
+// PIERRE = FIRE (feu)
+// PAPIER = SOIL (terre)
+// CISEAUX = ICE (glace)
 // Le feu fait fondre la glace, la terre recouvre le feu, la glace gèle la terre,
 let resetBtn = document.getElementById("reset");
 let scoreJoueur = document.getElementById("score-joueur");
@@ -86,28 +86,22 @@ const verifierGagnant = (choixJoueur, choixOrdi) => {
     }
     if (choixJoueur == PIERRE) {
         if (choixOrdi == PAPIER) {
-            // pierre.style.backgroundColor = "black";
           return victoireOrdinateur();
         } else if (choixOrdi == CISEAUX) {
-            // ociseauxBtn.style.backgroundColor = "black";
           return victoireJoueur();
         }
       }
       if (choixJoueur == PAPIER) {
         if (choixOrdi == CISEAUX) {
-            // papier.style.backgroundColor = "black";
           return victoireOrdinateur();
         } else if (choixOrdi == PIERRE) {
-            // opierreBtn.style.backgroundColor = "black";
           return victoireJoueur();
         }
       }
     if (choixJoueur == CISEAUX){
         if (choixOrdi == PIERRE) {
-            // ciseaux.style.backgroundColor = "black";
         return victoireOrdinateur();
     } else if (choixOrdi  == PAPIER){
-        // opapierBtn.style.backgroundColor = "black";
         return victoireJoueur();
     }
     }
@@ -123,9 +117,6 @@ const preparerNouvelleManche = () => {
         btn.classList.remove("active");
         btn.addEventListener("click", jouerManche);
     });
-    // pierre.style.display = 'block';
-    // papier.style.display = 'block';
-    // ciseaux.style.display = 'block';
     nextBtn.style.visibility = "hidden";
     opierreBtn.classList.remove("active");
     opapierBtn.classList.remove("active");
