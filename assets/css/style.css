@@ -12,9 +12,23 @@ body {
     flex-direction: column;
     align-items: center;
 }
-:root {
-    --border-radius: 15px;
-    --btn-padding: 20px;
+header{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+h1{
+    color: #fddf7f;
+}
+h2{
+    color: #fddf7f;
+    margin-bottom: 20px;
+}
+.choix_joueur{
+    margin-left: 20px;
 }
 .score {
     margin-top: 20px;
@@ -26,8 +40,7 @@ body {
     align-items: center;
     align-content: stretch;
     font-size: 20px;
-    /* background-color: #fddf7f; */
-    padding: var(--btn-padding);
+    padding: 20px;
     border-radius: 15px;
 }
 .texte-score{
@@ -63,23 +76,12 @@ body {
     font-weight: 700;
     font-size: 25px;
 }
-header{
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
-}
-h1{
-    color: #fddf7f;
-}
 #next {
     margin-top: 20px;
     padding: 10px 30px;
     background-color: #fddf7f;
     color: rgb(154, 154, 154);
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     visibility: hidden;
     cursor: pointer;
 }
@@ -87,17 +89,13 @@ h1{
     visibility: visible;
 }
 .jeu {
-    /* border-top: 2px solid #fddf7f; */
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 600px;
 }
 .button {
-    /* display: flex;
-    align-items: center; */
     font-size: 30px;
-    padding: var(--btn-padding);
     text-align: center;
 }
 .btn-joueur,
@@ -111,7 +109,6 @@ h1{
 .btn-joueur {
     color: rgb(154, 154, 154);
     cursor: pointer;
-    background-color: #fddf7f;
 }
 
 .btn-joueur:hover {
@@ -144,9 +141,6 @@ h1{
 .btn-ordi.active {
     background-color: white;
 }
-/* #pierre, #papier, #ciseaux{
-    display: block;
-} */
 .img_thunder_centre{
     position: absolute;
     left: 700px;

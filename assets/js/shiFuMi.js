@@ -2,6 +2,7 @@
 // PIERRE = FIRE
 // PAPIER = SOIL
 // CISEAUX = ICE
+// Le feu fait fondre la glace, la terre recouvre le feu, la glace gèle la terre,
 let resetBtn = document.getElementById("reset");
 let scoreJoueur = document.getElementById("score-joueur");
 let scoreOrdinateur = document.getElementById("score-ordinateur");
