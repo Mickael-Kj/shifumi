@@ -76,8 +76,11 @@ h2{
     font-size: 25px;
 }
 #next {
-    margin-top: 20px;
-    padding: 10px 30px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fddf7f;
     color: rgb(154, 154, 154);
     border-radius: 15px;
@@ -86,6 +89,14 @@ h2{
 }
 #next.active {
     visibility: visible;
+}
+.score_p{
+    background-color: #fddf7f;
+    font-size: 22px;
+    width: 30px;
+    padding-left: 8px;
+    border-radius: 10px;
+    color: #7d7d7d;
 }
 .jeu {
     padding-top: 20px;
