@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(154, 154, 154);
+    background-color: #1f2433;
     font-family: 'Jura', sans-serif;
     padding: 20px;
     display: flex;
@@ -123,7 +123,7 @@ h2{
 
 .btn-joueur:hover {
     color: #fddf7f;
-    background-color: white;
+    background-color: #fddf7f;
 }
 
 .button p {
